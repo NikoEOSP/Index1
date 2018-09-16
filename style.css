@@ -83,6 +83,16 @@ div{
 	position: relative;
 	top: -150px;
 	padding: 1px;
+	display: flex;
+	justify-content: center;
+}
+
+.rotate div{
+	display: block;
+	background-color: white;
+	width: 85%;
+	height: 85%;
+	align-self: center;	
 }
 
 .elem div{
