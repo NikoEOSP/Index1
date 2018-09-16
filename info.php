@@ -4,7 +4,8 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="conic-gradient.js"></script>
-  </head><head>
+  </head>
+  <head>
     <link rel="stylesheet" href="style.css">
   </head>
   <title>PHP Test edited</title>
