@@ -13,10 +13,10 @@ div{
 
 .mainContent{
 	display: inline-block;
-	width: 33%;
-	height: 100%;	
+	width: 33%;	
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
+	padding-top: 10px;
 }
 
 .card{
@@ -71,8 +71,12 @@ div{
 		
 }
 
-.conic-gradient {	
+.conic-gradient.rainbow {	
   	background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+}
+
+.conic-gradient.loading.green{
+	background: conic-gradient(green 5%,0,black 95%,0,green 0%);
 }
 
 .rotate + .shadow {	
@@ -93,13 +97,18 @@ div{
 	width: 85%;
 	height: 85%;
 	align-self: center;	
+	/*box-shadow:	inset -4px 4px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: rotate(0deg); !important*/
 }
 
 .elem div{
 	position: relative;
 }
 
-
+.bottomMargin{
+	display: block;
+	height: 30px;
+}
 
 
 
