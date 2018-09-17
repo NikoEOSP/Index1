@@ -42,10 +42,10 @@ h1{
 
 
 .ThreeColumns .Third{
+	display: inline-block;
 	height: 100%;
 	width: 33%;
 	min-width: 600px;
-	display: inline-block;
 	vertical-align: top;
 }
 
