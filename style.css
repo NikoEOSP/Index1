@@ -16,19 +16,51 @@ div{
 	border-radius: inherit;
 }
 
+p{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: NM;
+    src: url(NotoMono-Regular.ttf);
+}
+
+
+.ThreeColumns .Third{
+	height: 100%;
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.Third.First{
+	margin-right: 7px;
+	margin-left: -1px;
+}
+
+.Third.Last{
+	height: 150px;
+	margin-left: 7px;
+	margin-right: -1px;
+	background-color: white;
+}
+
 .sticky {
 	position: -webkit-sticky;
   	position: sticky;
   	top: 0;  
 }
 
-.headerWrapper{	  	
+.headerWrapper{
+	overflow: visible;
   	height: 0px;
-	width: calc(33%);			
+  	width: 100%;
 }
 
 
 .headerWrapper .headerAlign{
+	overflow: visible;
 	height: 0;
     padding-top: 75%;
 	position: relative;
@@ -39,6 +71,7 @@ div{
 }
 
 .headerContent{
+	overflow: visible;
 	display: flex;
     position: absolute;
     top: 0;
@@ -50,20 +83,43 @@ div{
 }
 
 .header{
+	margin-top: calc(75%/2 - 75px);
 	width: 100%;
 	height: 150px;
-	align-self: center;
 	background-color: white;
-	position: -webkit-sticky;
-  	position: sticky;
-  	top: 0;
+	top: -75px;
+	border-radius: 75px;
+	text-align: center;
+	box-shadow:  0 4px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.header > div{
+	position: static;
+	display: block;
+	background-color: white;
+	margin-left: 7px;
+	width: calc(100% - 14px);
+	height: calc(100% - 5px):
+	margin-bottom: 2px;
+}
+
+.header .Text{
+	height: 50%;
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header .Text p{
+	color: gray;
+	line-height: 75px;
 }
 
 .mainContent{
 	display: inline-block;
 	position: relative;
 	top: 0;
-	width: 33%;	
+	width: 100%;	
 	text-align: center;
 	
 	
