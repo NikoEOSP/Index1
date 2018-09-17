@@ -40,6 +40,10 @@ h1{
 	font-weight: bold;	
 }
 
+.flex{
+	display: flex;
+}
+
 .ThreeColumns .Third{
 	display: inline-block;
 	height: 100%;
@@ -47,10 +51,8 @@ h1{
 	vertical-align: top;
 }
 
-.Third.First{
-	
-	
-	
+.Third.First .Flex{
+	width: 100%;	
 }
 
 .Third.Second{
@@ -262,16 +264,20 @@ h1{
 	width: 100%;
 	}
 	.ThreeColumns .First{
-	display: flex;
+	display: block;
 	height: 75%;
-	width: 100%;
-	margin-bottom: -20px;
-	padding-bottom: 20px;
+	padding: 20px 0px;
+	
 	}
 
 	.ThreeColumns .Second{
 	margin:0;
 
+	}
+
+	.Third.First .Flex{
+	width: 100%;
+	height: 100%;
 	}
 
 
