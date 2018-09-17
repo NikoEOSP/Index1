@@ -149,9 +149,20 @@ h1{
 	position: relative;
 	top: 0;
 	width: 100%;	
-	text-align: center;
-	
-	
+	text-align: center;	
+}
+
+.TouchMe{
+	height: 0;
+	position: relative;
+	overflow: visible;
+	bottom: 0;
+	z-index: 1;
+}
+
+.TouchMe p{
+	line-height: 20px;
+	color: lightcoral
 }
 
 .card{
