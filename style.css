@@ -40,12 +40,10 @@ h1{
 	font-weight: bold;	
 }
 
-
 .ThreeColumns .Third{
 	display: inline-block;
 	height: 100%;
 	width: 33%;
-	min-width: 600px;
 	vertical-align: top;
 }
 
@@ -254,7 +252,18 @@ h1{
 
 
 
+@media screen and (max-width: 1441px) {
+    body {
+        margin-top: 0;
+    }
+	
+	.ThreeColumns .Third{
+	display: block;
+	width: 100%;
+	}
 
+
+}
 
 
 
