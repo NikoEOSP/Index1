@@ -13,6 +13,7 @@ body{
 	padding: 0;
 	background: white;
 	font-size: 13px;
+	font-family:Helvetica,Arial;
 }
 
 img {
@@ -22,25 +23,47 @@ img {
 }
 
 h1,h2{
-	font-weight: 200; color:#82559a;
+	font-weight: 200; 
+	color:#82559a;
+
 }
 
 /*header*/
 
 .header{
+	
 	background:#6e3e82;
 	height: 200px;
 	width:	100%;	
 	text-align: center;
 	overflow: hidden;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
 }
 
 .header img{
 	position: relative;
-	top: -470px;
+	top: 5;
 }
 
+.header .heading{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 200px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
 
+.header .heading h1{
+	color: white;
+	text-shadow: 0px 1px 0px gray;
+	font-size: 64px;
+
+}
 
 /*mainContent*/
 
