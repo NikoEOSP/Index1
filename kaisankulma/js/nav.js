@@ -15,5 +15,4 @@ $(document).ready(function(){
 		var activePage = $(this).find("a").attr("href"); 
 		$(activePage).fadeIn(); // Fade in the active page content
 	}); // end click method
-	
 }); // end $(document).ready method
