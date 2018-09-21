@@ -167,6 +167,7 @@ h1,h2{
 .navigation a{
 	padding: 15px;	
 	font-size: 16px;
+	color: #6e3e82;
 }
 
 .navigation li:hover a{
