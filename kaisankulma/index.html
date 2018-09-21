@@ -11,7 +11,25 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<script src="/js/slider.js" type="text/javascript"></script>
 		<script src="js/nav.js" type="text/javascript"></script>
-		<script src="js/sideimg.js" type="text/javascript"></script>
+		<script src="js/sideimg.js" type="text/javascript">
+			
+		</script>
+		<script type="text/javascript">
+			
+			
+			
+			
+
+			function checkContainer () {
+				if($('#stext').is(':visible')){ //if the container is visible on the page
+					scalesi();  //Adds a grid to the html
+				} else {
+					setTimeout(checkContainer, 50); //wait 50 ms, then try again
+				}
+			}
+			
+			
+		</script>
 		<link rel="stylesheet" href="style.css" media="screen">
 	</head>
 	<body>	
@@ -25,40 +43,54 @@
 					</div>
 				</div>
 			</div>
-			<div class = "mainContent">
+			<div id = "maincontent" class = "mainContent">
 				<div class = "navigation">
-					<nav>
-						<ul>
-							<li><a href="#page1">Etusivu</a>
-							<li><a href="#page2">Huoneistot</a>
-							<li><a href="#page3">Yhteystiedot</a>
-							<li><a href="#page4">Galleria</a>
-						</ul>
-					</nav>
+					<div>
+						<nav>
+							<ul>
+								<li><a href="#page1">Etusivu</a>
+								<li><a href="#page2">Huoneistot</a>
+								<li><a href="#page3">Yhteystiedot</a>
+								<li><a href="#page4">Galleria</a>
+							</ul>
+						</nav>
+					</div>
 				</div>
 				<div class="content">
 					<div id="page1">
 						<div class = "main etusivu">
-							<div id = "siimg" class = "sideImg">
-								<img src="images/ilmakuva_2011_kaisankulma_01.jpg" alt="ilma">
-							</div>
-							<div id = "stext" class = "first">
-								<p>Tervetuloa Kaisankulmaan!
-KaisanSydämen ja ElinanSydämen lomahuoneistoissa majoitut tasokkaasti aivan Vuokatin sydämessä. Tarjoamme majoitusta kahdessa eri luhtitalossa.  Vuokatin rinteille, laduille ja lenkkipoluille on huoneistoistamme vain 400m matka. Tule viihtymään tasokkaasti varustelluissa huoneistoissamme.
-
-Lomahuoneistot sijaitsevat ihanteellisella paikalla Vuokatin sydämessä ja toteutuksessa on kiinnitetty erityistä huomiota ympäröivän maiseman hyödyntämiseen. Kauniiden näköalojen lisäksi lomailijalla on KaisanKulmassa käytössään kaikki Vuokatin kiehtovat harrasteet, ympärivuotiset vapaa-ajanohjelmat ja monipuoliset palvelut. Päähissiasemalle, Lumilautatunnelille ja Vuokatin laduille KaisanKulman alueelta on vain 300 - 400 metrin matka.
-
-Majoitushintaamme sisältyvät majoituksen lisäksi myös liinavaatteet, pyyhkeet ja loppusiivous.
-
-Lemmikkieläimet ovat sallittuja osassa huoneistoista lisämaksusta. Toimitamme tarvittaessa myös lapsivarustuksen huoneistoon helpottamaan lapsiperheen lomailua.
-
-								</p>
-								<input id="clickMe" type="button" value="clickme" onclick="scalesi();" />
-							</div>
-						
-							<div class = "second" style ="display: none">
-								<div class = "sideImg">
+							<div class = "sideImgWrapper">
+								<div id = "sideImg" class = "sideImg">
 									<img src="images/ilmakuva_2011_kaisankulma_01.jpg" alt="ilma">
+								</div>
+								<div id = "sideText" class = "sideText">
+									<div class = "mainText">
+										<b>
+											KaisanSydämen ja ElinanSydämen lomahuoneistoissa majoitut tasokkaasti aivan Vuokatin sydämessä. Tarjoamme majoitusta kahdessa eri luhtitalossa.  Vuokatin rinteille, laduille ja lenkkipoluille on huoneistoistamme vain 400m matka. Tule viihtymään tasokkaasti varustelluissa huoneistoissamme.
+										</b>										
+									</div>									
+									<input id="clickMe" type="button" value="clickme" onclick="scalesi();" />
+								</div>
+							</div>
+							<div class = "sideImgWrapper">
+								<div id = "sideImg" class = "sideImg">
+									<img src="images/ilmakuva_2011_kaisankulma_01.jpg" alt="ilma">
+								</div>
+								<div id = "sideText" class = "sideText">
+									<div class = "mainText">
+										<p>
+											Lomahuoneistot sijaitsevat ihanteellisella paikalla Vuokatin sydämessä ja toteutuksessa on kiinnitetty erityistä huomiota ympäröivän maiseman hyödyntämiseen. Kauniiden näköalojen lisäksi lomailijalla on KaisanKulmassa käytössään kaikki Vuokatin kiehtovat harrasteet, ympärivuotiset vapaa-ajanohjelmat ja monipuoliset palvelut. Päähissiasemalle, Lumilautatunnelille ja Vuokatin laduille KaisanKulman alueelta on vain 300 - 400 metrin matka.										
+										</p>
+										<p></p>
+										<b>
+											Majoitushintaamme sisältyvät majoituksen lisäksi myös liinavaatteet, pyyhkeet ja loppusiivous.										
+										</b>
+										<p></p>
+										<p>
+											Lemmikkieläimet ovat sallittuja osassa huoneistoista lisämaksusta. Toimitamme tarvittaessa myös lapsivarustuksen huoneistoon helpottamaan lapsiperheen lomailua.
+										</p>										
+									</div>									
+									<input id="clickMe" type="button" value="clickme" onclick="scalesi();" />
 								</div>
 							</div>
 						</div>
@@ -84,3 +116,6 @@ Lemmikkieläimet ovat sallittuja osassa huoneistoista lisämaksusta. Toimitamme 
 		</div>
 	</body>
 </html>
+
+<p></p>
+										
