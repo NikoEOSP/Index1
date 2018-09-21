@@ -146,7 +146,8 @@ h1,h2{
 	border: 0px solid #6e3e82;
 	*border-bottom: 1px solid #6e3e82;
 	border-top: 0;
-	margin: 0px 0px;	
+	margin: 0px 0px;
+	padding-left: 0;	
     /*box-shadow: -1px 1px 2px #c8c8c8;*/
     border-radius: 0px 0px 0px 0px;
     background-color: white;
@@ -168,6 +169,8 @@ h1,h2{
 	padding: 15px;	
 	font-size: 16px;
 	color: #6e3e82;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .navigation li:hover a{
